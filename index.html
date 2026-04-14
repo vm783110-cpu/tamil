@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work From Home - New Opportunity</title>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1470434207768125');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1470434207768125&ev=PageView&noscript=1"/></noscript>
+
+<style>
+    :root {
+        --primary: #001f3f;
+        --accent: #ffd700;
+        --white: #ffffff;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--primary);
+        color: var(--white);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+    }
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 30px 20px;
+        border-radius: 20px;
+        border: 2px solid var(--accent);
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    h1 {
+        color: var(--accent);
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .sub-title {
+        background: var(--accent);
+        color: var(--primary);
+        padding: 5px 15px;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
+    .benefits {
+        text-align: left;
+        margin: 20px 0;
+    }
+    .item {
+        margin: 15px 0;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+    .item span {
+        margin-right: 10px;
+        font-size: 22px;
+    }
+    .cta-button {
+        display: block;
+        background: linear-gradient(135deg, #25D366, #128C7E);
+        color: white;
+        text-decoration: none;
+        padding: 18px;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 30px;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6); }
+        100% { transform: scale(1); }
+    }
+    .timer-box {
+        margin-top: 25px;
+        font-size: 16px;
+        color: #ddd;
+    }
+    #timer {
+        color: var(--accent);
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>घर बैठे पैसे कमाएं 🏠</h1>
+    <div class="sub-title">Daily Income Opportunity</div>
+
+    <div class="benefits">
+        <div class="item"><span>🎓</span> Students: पढ़ाई के साथ कमाई</div>
+        <div class="item"><span>👩‍🏫</span> Housewife: खाली समय का उपयोग</div>
+        <div class="item"><span>💼</span> Job Seekers: Extra Income Source</div>
+        <div class="item"><span>✅</span> No Registration Fees!</div>
+    </div>
+
+    <a href="https://t.me/+26e1ogVTh78xMWNl" class="cta-button" onclick="fbq('track', 'Contact');">
+        👉 JOIN TELEGRAM NOW
+    </a>
+
+    <div class="timer-box">
+        ⏳ मौका हाथ से न जाने दें: <span id="timer">10:00</span>
+    </div>
+</div>
+
+<script>
+let time = 600;
+const timerDisplay = document.getElementById("timer");
+
+setInterval(() => {
+    let m = Math.floor(time / 60);
+    let s = time % 60;
+    s = s < 10 ? '0' + s : s;
+    timerDisplay.innerHTML = m + ":" + s + " mins left";
+    if(time > 0) time--;
+}, 1000);
+</script>
+
+</body>
+</html>
