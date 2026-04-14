@@ -14,16 +14,15 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2842316869446939');
+    fbq('init', '4198924183770882'); // Updated Pixel ID
     fbq('track', 'PageView');
 
-    // Function to track Lead when button is clicked
     function trackLead() {
         fbq('track', 'Lead');
     }
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2842316869446939&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=4198924183770882&ev=PageView&noscript=1"
     /></noscript>
     <style>
         body {
@@ -89,6 +88,13 @@
             line-height: 1.6;
         }
 
+        /* Blinking Animation for Button */
+        @keyframes blink {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
         .btn {
             display: flex;
             align-items: center;
@@ -102,6 +108,7 @@
             font-size: 20px;
             margin-bottom: 25px;
             gap: 10px;
+            animation: blink 1.5s infinite; /* Button Blinking */
             transition: transform 0.2s;
         }
 
@@ -112,6 +119,14 @@
         .footer-text {
             font-size: 13px;
             color: #9ca3af;
+        }
+
+        /* Kunal link style */
+        .kunal-link {
+            color: #49dcb1;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px dashed #49dcb1;
         }
     </style>
 </head>
@@ -138,7 +153,8 @@
     </a>
 
     <div class="footer-text">
-        &copy; 2026 Day Trader | Managed by Kunal
+        &copy; 2026 Day Trader | Ads Managed by 
+        <a href="https://t.me/+jE7sEbzR23gwM2U1" class="kunal-link">Kunal</a>
     </div>
 </div>
 
